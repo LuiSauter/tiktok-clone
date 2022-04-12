@@ -8,9 +8,7 @@
 main {
   border: 1px solid #fff;
   aspect-ratio: 9/16;
-  /* width: 80vw; */
   border-radius:3px ;
   max-width: 375px;
-  /* max-width: 374px; */
   width: 100vw;
 }
