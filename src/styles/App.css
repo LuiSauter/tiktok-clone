@@ -1,15 +1,30 @@
 .App {
   background-color: #000;
-  height: 100vh;
+  min-height: 100vh;
   display: grid;
   place-content: center;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 main {
   aspect-ratio: 9/16;
-  border-radius:3px ;
-  max-width: 375px;
-  width: 100vw;
-  height: auto;
+  max-width: min-content;
+  width: 100%;
   display: block;
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+
+@media screen and (min-width: 760px) {
+  /* main {
+    padding: 0 0.5rem 0 0;
+  } */
+}
+
+@media screen and (min-width: 1400px) {
+  /* main {
+    max-width: min-content;
+  } */
 }
