@@ -1,11 +1,11 @@
-import VideoPlayer from './components/VideoPlayer'
+import FeedVideos from './components/FeedVieos'
 import './styles/App.css'
 
 const App = () => {
   return (
     <div className='App'>
       <main>
-        <VideoPlayer />
+        <FeedVideos />
       </main>
     </div>
   )
