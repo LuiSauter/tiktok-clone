@@ -4,20 +4,30 @@ import { Heart } from '../../Icons/Heart'
 import { Share } from '../../Icons/Share'
 
 const VideoPlayerActions = ({ likes = 12332, comments = 122, shares = 30 }) => {
+  const handleLike = () => {
+    console.log('click')
+  }
+  const handleComment = () => {
+    console.log('click')
+  }
+  const handleShare = () => {
+    console.log('click')
+  }
+
   return (
     <aside className={styles.actions}>
-      <div className={styles.action}>
+      <button className={styles.action} onClick={handleLike}>
         <Heart width='45' />
-        <strong>{likes}</strong>
-      </div>
-      <div className={styles.action}>
+        <span title='likes'>{likes}</span>
+      </button>
+      <button className={styles.action} onClick={handleComment}>
         <Comment width='45' />
-        <strong>{comments}</strong>
-      </div>
-      <div className={styles.action}>
+        <span title='comments'>{comments}</span>
+      </button>
+      <button className={styles.action} onClick={handleShare}>
         <Share width='45' />
-        <strong>{shares}</strong>
-      </div>
+        <span title='shares'>{shares}</span>
+      </button>
     </aside>
   )
 }
