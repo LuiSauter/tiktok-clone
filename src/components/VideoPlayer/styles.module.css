@@ -1,31 +1,66 @@
 .video {
   width: 100%;
-  height: 99%;
-  position: relative;
-  object-fit: cover;
+  height: 100%;
   min-height: 100vh;
+  object-fit: cover;
 }
 
 .wrapper {
   position: relative;
   height: 100vh;
-  width: 100%;
 }
 
 .player {
-  width: 62px;
-  height: 62px;
-  background-image: url('assets/player.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
   background-color: transparent;
-  border: none;
-  position: absolute;
+  background-image: url("assets/player.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 0;
+  height: 62px;
   inset: 0;
   margin: auto;
+  position: absolute;
+  width: 62px;
 }
 
 .hidden {
-  opacity: 0
+  opacity: 0;
+}
+
+.actions {
+  position: absolute;
+  bottom: 120px;
+  right: 8px;
+  z-index: 1;
+}
+
+.action {
+  color: #FFF;
+  background: transparent;
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 15px;
+  text-align: center;
+  align-items: center;
+}
+
+.user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.user img:first-child {
+  height: 48px;
+  width: 48px;
+  border-radius: 100%;
+}
+
+.user img:last-child {
+  margin-top: -8px;
 }
