@@ -1,4 +1,4 @@
-import FeedVideos from './components/FeedVieos'
+import FeedVideos from './components/FeedVieos/FeedVideos'
 import './styles/App.css'
 
 const App = () => {

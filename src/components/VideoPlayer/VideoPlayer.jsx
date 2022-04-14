@@ -1,8 +1,9 @@
 import styles from './styles.module.css'
 import React, { useRef, useState } from 'react'
 import clsx from 'clsx'
+import VideoPlayerActions from './VideoPlayerActions'
 
-const VideoPlayer = ({ src }) => {
+const VideoPlayer = (props) => {
   const [playing, setPlaying] = useState(false)
   const video = useRef()
   const handlePlay = () => {
@@ -18,6 +19,8 @@ const VideoPlayer = ({ src }) => {
     [styles.hidden]: playing
   })
 
+  const { src } = props
+
   return (
     <div className={styles.wrapper}>
       <video
@@ -29,6 +32,7 @@ const VideoPlayer = ({ src }) => {
         loop
       />
       <i className={playerClassName} />
+      <VideoPlayerActions {...props} />
     </div>
   )
 }
