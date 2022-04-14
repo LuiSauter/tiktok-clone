@@ -31,7 +31,7 @@ const VideoPlayer = (props) => {
         controls={false}
         loop
       />
-      <i className={playerClassName} />
+      <i onClick={handlePlay} className={playerClassName} />
       <VideoPlayerActions {...props} />
     </div>
   )
