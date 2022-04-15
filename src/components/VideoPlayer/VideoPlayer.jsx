@@ -2,6 +2,7 @@ import styles from './styles.module.css'
 import React, { useRef, useState } from 'react'
 import clsx from 'clsx'
 import VideoPlayerActions from './VideoPlayerActions'
+import VideoDescription from '../VideoDescription/VideoDescription'
 
 const VideoPlayer = (props) => {
   const [playing, setPlaying] = useState(false)
@@ -33,6 +34,7 @@ const VideoPlayer = (props) => {
       />
       <i onClick={handlePlay} className={playerClassName} />
       <VideoPlayerActions {...props} />
+      <VideoDescription {...props} />
     </div>
   )
 }
