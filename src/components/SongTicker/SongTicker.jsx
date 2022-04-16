@@ -9,9 +9,9 @@ const SongTicker = ({ songTitle }) => {
       <MusicIcon />
       <div className={styles.marquee}>
         <div className={styles.track}>
-          <span>{songTitle}</span>
-          <span>{songTitle}</span>
-          <span>{songTitle}</span>
+          <span>sonido original - {songTitle}</span>
+          <span>sonido original - {songTitle}</span>
+          <span>sonido original - {songTitle}</span>
         </div>
       </div>
     </div>
