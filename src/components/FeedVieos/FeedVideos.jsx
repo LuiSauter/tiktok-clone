@@ -13,7 +13,6 @@ const FeedVideos = () => {
       getVideos().then(([error, Videos]) => {
         if (error) setError(error)
         setVideos(Videos)
-        console.log(Videos)
       })
     }
     return () => {
@@ -32,7 +31,7 @@ const FeedVideos = () => {
       const { user = {} } = video
       return (
         <div className={styles.item} key={video.id}>
-          <VideoPlayer {...video} username={user.username} />
+          <VideoPlayer {...video} username={user.username} avatar={user.avatar} />
         </div>
       )
     })
