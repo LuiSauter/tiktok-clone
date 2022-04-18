@@ -8,5 +8,9 @@ export const getVideos = async () => {
         username,
         id
       )`)
+    .order('id', { ascending: false })
   return [error, Videos]
 }
+
+// export const uploadVideo = () => {
+// }
