@@ -18,7 +18,7 @@
     "wouter": "2.7.5"
   },
   "devDependencies": {
-    "@s-ui/mono": "2.31.0",
+    "@s-ui/mono": "2.35.0",
     "@testing-library/jest-dom": "5.16.4",
     "@testing-library/react": "13.0.1",
     "@types/react": "18.0.1",
